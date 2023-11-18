@@ -1,10 +1,13 @@
-import Search from './components/search/Search'
+import ComponenteLDireito from "./components/componenteLDireito/ComponenteLDireito"
+import ComponenteLEsquerdo from "./components/componenteLEsquerdo/ComponenteLEsquerdo"
+import './StyleGlobal.sass'
 
 function App() {
   return (
-    <>
-      <Search/>
-    </>
+    <main>
+      <ComponenteLEsquerdo/>
+      <ComponenteLDireito/>
+    </main>
   )
 }
 
