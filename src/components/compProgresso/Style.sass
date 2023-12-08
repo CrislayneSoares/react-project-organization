@@ -1,0 +1,44 @@
+.box
+   height: 200px
+   width: 100%
+
+   display: flex
+   flex-direction: row
+   align-items: center
+   justify-content: space-around
+
+
+.box-circle
+    border-radius: 10px
+    padding: 20px
+    background-color:  rgb(62,68,118)
+
+    display: flex
+    align-items: center
+
+    width: 90%
+   
+circle
+    fill: none
+    
+    stroke: gray
+    stroke-width: 10
+    stroke-dasharray: 440
+    stroke-dashoffset: 440
+
+    transform: translate(5px, 5px)
+
+circle:nth-child(1)
+    stroke-dashoffset: 0
+    stroke: gray
+
+circle:nth-child(2)
+    stroke-dashoffset: calc(440 - 308)
+    stroke: dodgerblue
+
+.dados 
+    h2
+        color: white
+        font-size: 50px
+    p 
+        color: white
