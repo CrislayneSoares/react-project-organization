@@ -10,13 +10,10 @@ export default function Progresso(){
                 </svg>
 
                 <div className='dados'>
-                <h2>71%</h2>
-                <p>New projects</p>
-            </div>
+                    <h2>71%</h2>
+                    <p>New projects</p>
+                </div>
            </div>
-
-            
-
         </section>      
     )
 }
