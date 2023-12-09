@@ -1,13 +1,21 @@
 import ButtonAdd from '../button/ButtonAdd'
-import ProjetoNavBar from '../projeto-nav-bar/ProjetoNavBar'
-import Tarefas from '../tarefas/Tarefas'
+import Progress from '../projeto-nav-bar/progress/Progress'
+import Complete from '../projeto-nav-bar/complete/Complete'
+import Draft from '../projeto-nav-bar/draft/Draft'
+import {Routes, Route, Link} from 'react-router-dom'
 import './Style.sass'
 
 export default function ComponenteLDireito() {
     return (
         <section className='container__direito'>
             <div className='container__nav-button'>
-                <ProjetoNavBar/>
+                <nav className='container__nav'>
+                    <ul>
+                        <li><Link to={'/draft'}>DRAFT</Link></li>
+                        <li><Link to={'/progress'}>IN PROGRESS</Link></li>
+                        <li><Link to={'/complete'}>COMPLETE</Link></li>
+                    </ul>
+                </nav>
                 <ButtonAdd/>
             </div>
 
@@ -19,8 +27,11 @@ export default function ComponenteLDireito() {
             </div>
 
             <div>
-                <Tarefas/>
-                <Tarefas/>
+            <Routes>
+                <Route path='/complete' element={<Complete/>} />
+                <Route path='/progress' element={<Progress/>} />
+                <Route path='/draft' element={<Draft/>} />
+            </Routes>
             </div>
         </section>
     )
