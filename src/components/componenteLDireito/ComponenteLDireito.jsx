@@ -12,7 +12,7 @@ export default function ComponenteLDireito() {
                             <Route path='/profile'/>
                             <Route path='/setting'/>
                             <Route path='/dash' element={<Dash/>} />
-                            <Route className='container__nav-button' path='/projects' element={<Projects/>}/>
+                            <Route className='container__nav-button' path='/projects/*' element={<Projects/>}/>
                         </Routes>
                     </div>
             </div>

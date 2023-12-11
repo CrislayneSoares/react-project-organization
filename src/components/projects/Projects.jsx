@@ -11,9 +11,9 @@ export default function Projects(){
             <div className='container__nav-button'>
                 <nav className='container__nav'>
                     <ul>
-                        <li><Link to={'/draft'}>DRAFT</Link></li>
-                        <li><Link to={'/progress'}>IN PROGRESS</Link></li>
-                        <li><Link to={'/complete'}>COMPLETE</Link></li>
+                        <li><Link to={'draft'}>DRAFT</Link></li>
+                        <li><Link to={'progress'}>IN PROGRESS</Link></li>
+                        <li><Link to={'complete'}>COMPLETE</Link></li>
                     </ul>
                 </nav>
                 <ButtonAdd/>
@@ -28,9 +28,9 @@ export default function Projects(){
 
             <div>
             <Routes>
-                <Route path='/progress' element={<Progress/>}/>
-                <Route path='/complete' element={<Complete/>}/>
-                <Route path='/draft' element={<Draft/>} />
+                <Route path='draft' element={<Draft/>} />
+                <Route path='progress' element={<Progress/>}/>
+                <Route path='complete' element={<Complete/>}/>
             </Routes>
             </div>
        </div>
