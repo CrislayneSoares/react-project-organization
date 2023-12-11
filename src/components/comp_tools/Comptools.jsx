@@ -1,4 +1,5 @@
 import './Style.sass'
+import {Link} from 'react-router-dom'
 
 export default function Comp_Tools(){
     const profile = 'src/assets/profile.png'
@@ -16,30 +17,33 @@ export default function Comp_Tools(){
             <div className='tools'>
 
                 <figure className='img-tools'>
-                    <a href=""> <img src={profile} alt="perfil" /></a>
+                    <Link to={'/profile'}> <img src={profile} alt="perfil" /></Link>
                 </figure>
 
                 <figure className='img-tools'>
-                    <a href=""><img src={dashboard} alt="dashboard" /></a>
+                    <Link to={'/dash'}><img src={dashboard} alt="dashboard" /></Link>
                     <figcaption>
                         Dashboard
                     </figcaption>
                 </figure>
 
                 <figure className='img-tools'>
-                    <a href=""><img src={project} alt="projeto" /></a> 
+                    <Link to={'/projects'}><img src={project} alt="projeto" /></Link> 
                     <figcaption>
                         Projects
                     </figcaption>
                 </figure>
 
                 <figure className='img-tools'>
-                    <a href=""><img src={setting} alt="config" /></a>
+                    <Link to={'/settings'}><img src={setting} alt="config" /></Link>
                     <figcaption>
                         Settings
                     </figcaption>
                 </figure>
+            </div>
 
+            <div>
+                
             </div>
             
         </section>
